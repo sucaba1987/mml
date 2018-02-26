@@ -8,7 +8,7 @@ namespace mpp {
 
 class multi_power_point {
   public:
-    typedef std::function<void ()> Callback;
+    using Callback = std::function<void ()>;
 
     void register_on_callback(Callback cb);
     void register_off_callback(Callback cb);
